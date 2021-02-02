@@ -17,6 +17,9 @@ inputs:
   passphrase:
     description: 'phasefrase to open the ssh key if available'
     required: false
+  pub:
+    description: 'phasefrase to open the ssh key if available'
+    required: false
   port:
     description: 'ssh remote port'
     default: 22

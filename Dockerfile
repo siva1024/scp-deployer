@@ -1,4 +1,4 @@
-FROM alpine
+FROM ubuntu:latest
 RUN apk update && apk add git openssh
 
 COPY entrypoint.sh /entrypoint.sh
