@@ -6,6 +6,8 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
+    - name: Check out my other private repo
+      uses: actions/checkout@master
     - name: checkout
       uses: siva1024/scp-deployer@latest
       with:

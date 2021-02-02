@@ -31,4 +31,6 @@ echo $INPUT_KEY > ~/.ssh/id_rsa && echo $INPUT_PUB > ~/.ssh/id_rsa.pub
 chmod 600 ~/.ssh/id_rsa && chmod 600 ~/.ssh/id_rsa.pub
 touch /scp-deployer.sh && chmod 700 /scp-deployer.sh
 echo ""
+
+
 echo "+++++++++++++++++++END PIPELINES+++++++++++++++++++"
