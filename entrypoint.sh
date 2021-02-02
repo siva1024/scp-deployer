@@ -22,6 +22,10 @@ pwd
 
 ls -ltr
 
+ls -ltr /
+
+cat /entrypoint.sh
+
 echo "Setting up the public, private keys and Executables"
 echo $INPUT_KEY > ~/.ssh/id_rsa && echo $INPUT_PUB > ~/.ssh/id_rsa.pub
 chmod 600 ~/.ssh/id_rsa && chmod 600 ~/.ssh/id_rsa.pub
