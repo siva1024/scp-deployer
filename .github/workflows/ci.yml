@@ -17,6 +17,9 @@ jobs:
         passphrase: ${{ secrets.PASSPHRASE }}
         key: ${{ secrets.KEY }}
         pub: ${{ secrets.PUB }}
-        source: "tests/a.txt,tests/b.txt"
+        source: |-
+          './test/*' => /home/github/test/
+          ./test/test1* => $TARGET_DIR/test1/
+          ./test/test*.csv => "/home/github/test/test2/"
         target: "test"
  
