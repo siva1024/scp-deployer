@@ -7,9 +7,8 @@ if [[ -z "$INPUT_HOST" || -z "$INPUT_USER" ]] ; then
     echo "Exiting the Application"
     echo "Trying uppercase"
     echo $INPUT_HOST
-    echo "Trying lower case"
-    echo $INPUT_host
-    exit 1
+    echo "printing User"
+    echo $INPUT_USER
 fi
 echo ""
 
