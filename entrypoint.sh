@@ -2,7 +2,7 @@
 echo "+++++++++++++++++++STARTING PIPELINES+++++++++++++++++++"
 
 echo "Checking the configurations"
-if [[ -z "$INPUT_HOST" || -z "$INPUT_USER" ]] ; then
+if [[ -z "$INPUT_HOST" || -z "$INPUT_USERNAME" ]] ; then
     echo "No Host found to connect"
     echo "Exiting the Application"
     exit 1
@@ -11,7 +11,7 @@ echo ""
 
 echo $INPUT_HOST
 
-echo $INPUT_USER
+echo $INPUT_USERNAME
 
 echo "Setting up the SSH folders"
 mkdir ~/.ssh/ && chmod 0700 ~/.ssh/
