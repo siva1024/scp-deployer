@@ -26,8 +26,19 @@ echo ""
 
 
 echo "Starting the SCP between local and remote"
+# Reformating the INPUT string
+export INPUT_SOURCE=`echo $INPUT_SOURCE | sed 's/\[//g' | sed 's/ //g'`
+
+#export INPUT_SOURCE="[./test/*,/home/github/test/] [./test/test1*,/test1] [./test/test*.csv,/home/github/test/test2/]"
 echo $INPUT_SOURCE
 
-#'./test/*' => /home/github/test/ ./test/test1* => $TARGET_DIR/test1/ ./test/test*.csv => "/home/github/test/test2/"
+echo $INPUT_SOURCE | awk 'BEGIN { FS = "]" } { print NF }{ 
+    i = 1
+    while (i <= NF) { 
+        print $i; 
+        ++i 
+        } 
+    }'
+
 
 echo "+++++++++++++++++++END PIPELINES+++++++++++++++++++"
