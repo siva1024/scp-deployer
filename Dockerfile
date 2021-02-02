@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-RUN apt-get update && apk-get install -y git openssh
+RUN apt-get update && apt-get install -y git openssh
 
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
