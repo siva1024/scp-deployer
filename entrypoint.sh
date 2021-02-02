@@ -28,4 +28,6 @@ echo ""
 echo "Starting the SCP between local and remote"
 echo $INPUT_SOURCE
 
+#'./test/*' => /home/github/test/ ./test/test1* => $TARGET_DIR/test1/ ./test/test*.csv => "/home/github/test/test2/"
+
 echo "+++++++++++++++++++END PIPELINES+++++++++++++++++++"
