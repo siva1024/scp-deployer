@@ -1,5 +1,5 @@
-FROM ubuntu:latest
-RUN DEBIAN_FRONTEND="noninteractive" apt-get update && apt-get install -y git ssh
+FROM alpine
+RUN apk update && apk add git openssh
 
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh

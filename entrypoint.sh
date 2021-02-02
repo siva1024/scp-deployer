@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 echo "+++++++++++++++++++STARTING PIPELINES+++++++++++++++++++"
 
 echo "Checking the configurations"
